@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="container">
+  <div class="col-md-6 mx-auto text-center">
+	 <div class="header-title">
+		<h1 class="wv-heading--title">
+		   Too Expensive? — Don't Worry!
+		</h1>
+		<h2 class="wv-heading--subtitle">
+		   We will notify you when the product price is at or below the target price.
+		</h2>
+	 </div>
+  </div>
+  <div class="row">
+	 <div class="col-md-4 mx-auto">
+		<div class="myform form ">
+		   <form action="" method="POST" name="mainform" autocomplete="off">
+              {% csrf_token %}
+			  {{ form }}
+              <button type="submit" class="btn btn-block send-button tx-tfm">Get Notified</button>
+			  <p class="small mt-3 text-center">Made by  <a href="https://github.com/AlDevStuff/" target="_blank"><i class="fab fa-github"></i></a></p>
+		   </form>
+		</div>
+	 </div>
+  </div>
+</div>
+{% endblock content %}
+
+
+
