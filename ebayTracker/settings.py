@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in productions!
 DEBUG = True
 
 ALLOWED_HOSTS = ['ebayalerter.herokuapp.com', '127.0.0.1']
