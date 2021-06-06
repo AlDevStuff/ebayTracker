@@ -9,8 +9,6 @@ from django.core.mail import EmailMessage
 
 
 def home(request):
-    error = None
-
     form = MainForm(request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
