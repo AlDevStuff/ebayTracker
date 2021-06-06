@@ -36,7 +36,8 @@ class Item(models.Model):
         body = f'''The Ebay product {self.url} has reached your target price of ${self.target_price}. Thus, we will stop notifying you. Thank you for using Ebay Price Alerter!\n\n\n
             Ebay Price Alerter :)
             '''
-        if self.old_price <= self.target_price and self.old_price != 0:
+#         if self.old_price <= self.target_price and self.old_price != 0:
+          if self.current_price <= self.target_price:
             email = EmailMessage('Ebay Price Alerter: Target Price Reached', body, settings.EMAIL_HOST_USER,
                                  to=[self.receiver_email], )
             email.fail_silently = False
