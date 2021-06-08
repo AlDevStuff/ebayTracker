@@ -27,5 +27,5 @@ def home(request):
 
     queryset = Item.objects.all()
 
-    context = {'queryset': queryset, 'form': form, 'error': error,}
+    context = {'queryset': queryset, 'form': form}
     return render(request, 'base/index.html', context)
