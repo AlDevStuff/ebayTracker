@@ -4,7 +4,7 @@ Ebay Tracker
 
 A web scrapper that fetches prices from Ebay, allowing users to get notified when their target price is reached.
 
-![project-demo](https://github.com/AlDevStuff/master/demo.gif)
+![project-demo](https://github.com/AlDevStuff/ebayTracker/blob/master/demo.gif)
 
 Features
 --------
